@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Holi My Love 💜</title>
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Georgia', serif;
+    text-align: center;
+    overflow: hidden;
+    background: linear-gradient(-45deg, #ff0080, #7928ca, #00c6ff, #ffcc00);
+    background-size: 400% 400%;
+    animation: gradient 12s ease infinite;
+}
+
+@keyframes gradient {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+.container {
+    background: rgba(0,0,0,0.65);
+    padding: 45px;
+    border-radius: 25px;
+    width: 90%;
+    max-width: 550px;
+    color: white;
+    box-shadow: 0 0 40px rgba(255,255,255,0.4);
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(30px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 25px;
+    color: #ffccff;
+}
+
+p {
+    font-size: 19px;
+    line-height: 1.8;
+}
+
+.highlight {
+    color: #ffd700;
+    font-weight: bold;
+}
+
+.heart {
+    font-size: 30px;
+    margin-top: 20px;
+    animation: beat 1s infinite;
+}
+
+@keyframes beat {
+    0%,100% {transform: scale(1);}
+    50% {transform: scale(1.2);}
+}
+
+button {
+    margin-top: 25px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #ff4da6;
+    color: white;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ff1a8c;
+    transform: scale(1.05);
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Happy Holi To My Love Giri 💜🌈</h1>
+
+<p>
+Like <span class="highlight">Radha</span> found her colors in <span class="highlight">Krishna</span>,  
+I found my entire world in you… 💫  
+<br><br>
+Holi may bring a thousand shades,  
+bright pinks, deep blues, golden yellows…  
+<br><br>
+But the only color my heart chooses,  
+the only one it feels safe in,  
+the only one it longs for…  
+<br><br>
+<span class="highlight">is YOU.</span> 💖
+</p>
+
+<div class="heart">💞</div>
+
+<p>
+No matter the distance,  
+no matter the storms,  
+you will always be my favorite color in every season of life.
+</p>
+
+<button onclick="showLove()">Click Me 💌</button>
+
+<p id="secret" style="display:none; margin-top:15px; color:#ffccff;">
+Forever yours,  
+<br>Shafiya 💗
+</p>
+
+</div>
+
+<script>
+function showLove() {
+    document.getElementById("secret").style.display = "block";
+}
+</script>
+
+</body>
+</html>
